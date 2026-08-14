@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+  <defs>
+    <radialGradient id="badgeGrad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#F3B94A"/>
+      <stop offset="100%" stop-color="#E8A020"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="220" fill="#0A1628"/>
+
+  <!-- badge group, reused icon -->
+  <g transform="translate(30,10) scale(0.98)">
+    <path d="M 100 34 A 66 66 0 1 1 41 132" fill="none" stroke="#00AACC" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="41" cy="132" r="6.5" fill="#00AACC"/>
+    <circle cx="152" cy="148" r="5.5" fill="#E8A020"/>
+    <circle cx="100" cy="102" r="56" fill="url(#badgeGrad)"/>
+    <g transform="translate(100,102)">
+      <rect x="-24" y="42" width="48" height="4" rx="2" fill="#0A1628" opacity="0.55"/>
+      <rect x="-22" y="-30" width="42" height="9" rx="3" fill="#0A1628"/>
+      <rect x="-20" y="-21" width="38" height="55" rx="5" fill="#0A1628"/>
+      <rect x="-13" y="-11" width="22" height="15" rx="2" fill="#00AACC"/>
+      <circle cx="-8" cy="15" r="2.6" fill="#F3B94A"/>
+      <circle cx="0" cy="15" r="2.6" fill="#F3B94A"/>
+      <circle cx="8" cy="15" r="2.6" fill="#F3B94A"/>
+      <path d="M 18 -14 C 34 -14, 36 6, 30 18" fill="none" stroke="#0A1628" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 24 15 L 40 8 L 46 18 L 30 26 Z" fill="#0A1628"/>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(230,0)">
+    <text x="0" y="105" font-family="Courier New, monospace" font-weight="700" font-size="56" fill="#FFFFFF" letter-spacing="2">NEXUS <tspan fill="#E8A020">FLOW OS</tspan></text>
+    <rect x="2" y="122" width="560" height="3" fill="#00AACC"/>
+    <text x="0" y="152" font-family="Arial, sans-serif" font-size="17" letter-spacing="3" fill="#00AACC">REAL-TIME FUEL STATION CONTROL</text>
+    <text x="0" y="178" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#8A96A8">A NEXUS DIGITAL SOLUTIONS PRODUCT</text>
+  </g>
+</svg>
