@@ -332,7 +332,15 @@
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
     font-size:12px;color:var(--ink-muted);
   }
+.about{background:var(--soft-gray);}
+.about-facts{list-style:none;max-width:640px;margin:32px auto 0;padding:0;display:grid;gap:0;}
+.about-facts li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(10,22,40,.12);}
+.about-facts strong{font-weight:600;}
+.about-facts a{color:inherit;}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Nexus Digital Solutions","url":"https://nexusflowos.com","email":"simeon@nexusflowos.com","foundingDate":"2026-05","address":{"@type":"PostalAddress","addressLocality":"Lusaka","addressCountry":"ZM"}}
+</script>
 </head>
 <body>
 
@@ -367,6 +375,7 @@
     <nav class="nav-links">
       <a href="#features">Features</a>
       <a href="#demo">Demo</a>
+      <a href="#about">About</a>
       <a href="#get-started">Get Started</a>
       <a class="btn btn-gold" href="#get-started">Book a Demo</a>
     </nav>
@@ -428,7 +437,7 @@
 
 <div class="context-strip">
   <div class="wrap">
-    <p>Piloting with fuel retailers in Lusaka</p>
+    <p>Open for pilots with fuel retailers in Lusaka</p>
     <span class="pill">SHIFT TRACKING</span>
     <span class="pill">CASH RECONCILIATION</span>
     <span class="pill">INVENTORY</span>
@@ -492,21 +501,35 @@
   </div>
 </section>
 
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">About us</span>
+      <h2>Nexus Digital Solutions</h2>
+      <p>A software company based in Lusaka, Zambia, registered with PACRA in 2026. We build operations software for Zambian businesses. Nexus Flow OS is our fuel-station platform, open for its first pilots.</p>
+    </div>
+    <ul class="about-facts">
+      <li><strong>Legal name</strong><span>Nexus Digital Solutions</span></li>
+      <li><strong>Registration</strong><span>Business name registered with PACRA, 2026</span></li>
+      <li><strong>Location</strong><span>Lusaka, Zambia</span></li>
+      <li><strong>Product</strong><span>Nexus Flow OS &mdash; pilot-open</span></li>
+      <li><strong>Contact</strong><span><a href="mailto:simeon@nexusflowos.com">simeon@nexusflowos.com</a></span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="demo" id="demo">
   <div class="wrap">
     <div class="demo-panel">
       <div class="demo-copy">
         <span class="section-eyebrow">See it in action</span>
-        <h2>Watch a real shift handover, start to finish.</h2>
-        <p>From an attendant clocking in to a supervisor approving the day's cash — this is Nexus Flow OS running end to end, not a slide deck.</p>
-        <a class="btn btn-gold" href="#get-started">Book a Live Walkthrough</a>
+        <h2>See a shift handover, start to finish.</h2>
+        <p>From clock-in and tank dips to cash drops, mobile money and supervisor approval &mdash; we walk you through the full flow on your own phone. Book a demo and we will set it up around your station.</p>
+        <a class="btn btn-gold" href="mailto:simeon@nexusflowos.com?subject=Nexus%20Flow%20OS%20demo">Book a Demo</a>
       </div>
       <div class="demo-video">
-        <!-- TODO(Paul): drop the real walkthrough file in at assets/video/nexus_flow_os.mp4 -->
-        <video controls preload="metadata" poster="assets/video/poster.png">
-          <source src="assets/video/nexus_flow_os.mp4" type="video/mp4">
-          Your browser doesn't support embedded video. <a href="mailto:nexusdigitalsolutions.zm@gmail.com">Email us</a> for the walkthrough.
-        </video>
+        <img src="assets/brand/nexusflowos_logo_dark.png" alt="Nexus Flow OS" style="width:60%;max-width:320px;height:auto;">
       </div>
     </div>
   </div>
@@ -516,27 +539,27 @@
   <div class="wrap">
     <div class="section-head">
       <span class="section-eyebrow">Get started</span>
-      <h2>Getting your station live takes three steps.</h2>
-      <p>No procurement process, no long onboarding. We set up your branch and walk your team through it in person.</p>
+      <h2>Three steps to a station that adds up.</h2>
+      <p>No long setup. We start with one branch and grow from there.</p>
     </div>
     <div class="steps">
       <div class="step">
         <span class="step-index">01</span>
-        <span class="tag">Talk to us</span>
+        <span class="tag">Talk</span>
         <h3>Book a demo</h3>
-        <p>We walk through the platform on your own numbers — shift structure, tanks, and how your attendants currently handle cash.</p>
+        <p>Tell us how your station runs today &mdash; shifts, tanks, pumps, cash and mobile money.</p>
       </div>
       <div class="step">
         <span class="step-index">02</span>
-        <span class="tag">We set up</span>
-        <h3>Branch configuration</h3>
-        <p>Tanks, pumps, shift windows, and your team's accounts are configured for your station before day one.</p>
+        <span class="tag">See</span>
+        <h3>Walk through it</h3>
+        <p>We show the attendant, supervisor and owner views using your own workflow.</p>
       </div>
       <div class="step">
         <span class="step-index">03</span>
-        <span class="tag">Go live</span>
-        <h3>You're running</h3>
-        <p>Attendants clock in, supervisors review handovers, and you see the day's real numbers from your phone.</p>
+        <span class="tag">Pilot</span>
+        <h3>Start a pilot</h3>
+        <p>Begin with one branch, so you can see the numbers add up before you roll it out.</p>
       </div>
     </div>
   </div>
@@ -544,11 +567,11 @@
 
 <section class="final-cta">
   <div class="wrap">
-    <h2>Ready to see your station's real numbers?</h2>
-    <p>Book a walkthrough with the team building Nexus Flow OS — we'll show you the real product, not a slide deck.</p>
+    <h2>Know where every kwacha went.</h2>
+    <p>Nexus Flow OS is open for its first pilots with Zambian fuel retailers. Tell us about your station.</p>
     <div class="hero-ctas">
-      <a class="btn btn-gold" href="mailto:nexusdigitalsolutions.zm@gmail.com">Book a Demo</a>
-      <a class="btn btn-outline" href="https://wa.me/260978511578" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      <a class="btn btn-gold" href="mailto:simeon@nexusflowos.com?subject=Nexus%20Flow%20OS%20demo">Book a Demo</a>
+      <a class="btn btn-outline" href="#about">About us</a>
     </div>
   </div>
 </section>
@@ -558,50 +581,50 @@
     <div class="footer-grid">
       <div class="footer-col">
         <div class="footer-logo">
-          <svg viewBox="0 0 200 200" aria-hidden="true">
-            <defs>
-              <radialGradient id="bg2" cx="35%" cy="30%" r="80%">
-                <stop offset="0%" stop-color="#F3B94A"/>
-                <stop offset="100%" stop-color="#E8A020"/>
-              </radialGradient>
-            </defs>
-            <path d="M 100 34 A 66 66 0 1 1 41 132" fill="none" stroke="#00AACC" stroke-width="6" stroke-linecap="round"/>
-            <circle cx="41" cy="132" r="6.5" fill="#00AACC"/>
-            <circle cx="152" cy="148" r="5.5" fill="#E8A020"/>
-            <circle cx="100" cy="102" r="56" fill="url(#bg2)"/>
-            <g transform="translate(100,102)">
-              <rect x="-24" y="42" width="48" height="4" rx="2" fill="#0A1628" opacity="0.55"/>
-              <rect x="-22" y="-30" width="42" height="9" rx="3" fill="#0A1628"/>
-              <rect x="-20" y="-21" width="38" height="55" rx="5" fill="#0A1628"/>
-              <rect x="-13" y="-11" width="22" height="15" rx="2" fill="#00AACC"/>
-              <circle cx="-8" cy="15" r="2.6" fill="#F3B94A"/>
-              <circle cx="0" cy="15" r="2.6" fill="#F3B94A"/>
-              <circle cx="8" cy="15" r="2.6" fill="#F3B94A"/>
-              <path d="M 18 -14 C 34 -14, 36 6, 30 18" fill="none" stroke="#0A1628" stroke-width="5" stroke-linecap="round"/>
-              <path d="M 24 15 L 40 8 L 46 18 L 30 26 Z" fill="#0A1628"/>
-            </g>
-          </svg>
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <radialGradient id="bg2" cx="35%" cy="30%" r="80%">
+            <stop offset="0%" stop-color="#F3B94A"/>
+            <stop offset="100%" stop-color="#E8A020"/>
+          </radialGradient>
+        </defs>
+        <path d="M 100 34 A 66 66 0 1 1 41 132" fill="none" stroke="#00AACC" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="41" cy="132" r="6.5" fill="#00AACC"/>
+        <circle cx="152" cy="148" r="5.5" fill="#E8A020"/>
+        <circle cx="100" cy="102" r="56" fill="url(#bg2)"/>
+        <g transform="translate(100,102)">
+          <rect x="-24" y="42" width="48" height="4" rx="2" fill="#0A1628" opacity="0.55"/>
+          <rect x="-22" y="-30" width="42" height="9" rx="3" fill="#0A1628"/>
+          <rect x="-20" y="-21" width="38" height="55" rx="5" fill="#0A1628"/>
+          <rect x="-13" y="-11" width="22" height="15" rx="2" fill="#00AACC"/>
+          <circle cx="-8" cy="15" r="2.6" fill="#F3B94A"/>
+          <circle cx="0" cy="15" r="2.6" fill="#F3B94A"/>
+          <circle cx="8" cy="15" r="2.6" fill="#F3B94A"/>
+          <path d="M 18 -14 C 34 -14, 36 6, 30 18" fill="none" stroke="#0A1628" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 24 15 L 40 8 L 46 18 L 30 26 Z" fill="#0A1628"/>
+        </g>
+      </svg>
           <span class="wordmark">NEXUS <span>FLOW OS</span></span>
         </div>
-        <p>Real-time fuel station control, built by Nexus Digital Solutions. Lusaka, Zambia.</p>
+        <p>Operations software for Zambian fuel stations, built by Nexus Digital Solutions in Lusaka.</p>
       </div>
       <div class="footer-links">
         <div>
           <h5>Product</h5>
           <a href="#features">Features</a>
           <a href="#demo">Demo</a>
-          <a href="#get-started">Get Started</a>
+          <a href="#get-started">Get started</a>
         </div>
         <div>
-          <h5>Contact</h5>
-          <a href="mailto:nexusdigitalsolutions.zm@gmail.com">nexusdigitalsolutions.zm@gmail.com</a>
-          <a href="https://wa.me/260978511578" target="_blank" rel="noopener">WhatsApp</a>
+          <h5>Company</h5>
+          <a href="#about">About us</a>
+          <a href="mailto:simeon@nexusflowos.com">simeon@nexusflowos.com</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Nexus Digital Solutions. All rights reserved.</span>
-      <span>Built and maintained by <a href="https://nexus-digital-solution.vercel.app/" target="_blank" rel="noopener">Nexus Digital Solutions ZM</a></span>
+      <span>&copy; 2026 Nexus Digital Solutions &middot; Lusaka, Zambia</span>
+      <span>Registered business name (PACRA, 2026)</span>
     </div>
   </div>
 </footer>
